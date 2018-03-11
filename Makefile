@@ -3,7 +3,7 @@
 all: lab1
 
 setup:
-	@mkdir bin &> /dev/null
+	-mkdir bin
 
 lab1: setup
 	gcc lab1/main.c -lGL -lGLU -lglut -o bin/lab1
